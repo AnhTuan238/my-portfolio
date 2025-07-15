@@ -1,3 +1,6 @@
+// "use client";
+// none
+
 import { getTranslations } from "next-intl/server";
 import {
   Accordion,
@@ -7,6 +10,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { ExperienceType } from "@/modules/portfolio/types/experience.type";
+// import { motion } from "framer-motion";
 
 export default async function Experience({
   experiencesData,
@@ -18,7 +22,14 @@ export default async function Experience({
   return (
     <section id="experience" className="section lg:p-0 lg:pt-45">
       {/* Title */}
-      <div className="mb-9 lg:mb-18">
+      {/* <motion.div
+        className="mb-9 lg:mb-18"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      > */}
+      <div className="px-5 mb-9 lg:mb-18">
         <h3 className="heading lg:mb-6 lg:text-6xl">{t("title")}</h3>
         <p className="des-for-tit lg:text-xl">
           {t("subtitle.part1")}
@@ -26,6 +37,7 @@ export default async function Experience({
           {t("subtitle.part2")}
         </p>
       </div>
+      {/* </motion.div> */}
 
       {/* Content */}
       <div className="content-wrapper">

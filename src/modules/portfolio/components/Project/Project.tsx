@@ -7,6 +7,8 @@ import { ProjectType, TechType } from "@/modules/portfolio/types/project.type";
 import ProjectList from "./ProjectList";
 import SkillList from "./SkillList";
 
+import { motion } from "framer-motion";
+
 interface Props {
   //   t: (key: string) => string;
   projectsData: ProjectType[];
@@ -27,14 +29,22 @@ export default function Project({ projectsData, skillsData }: Props) {
   return (
     <section id="projects" className="section px-0 pb-0 lg:p-0 lg:pt-45">
       {/* Title */}
-      <div className="mb-9 lg:mb-18">
+      <motion.div
+        className="px-5 mb-9 lg:mb-18"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        viewport={{ once: false, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        {/* <div className="mb-9 lg:mb-18"> */}
         <h3 className="heading lg:mb-6 lg:text-6xl">{t("title")}</h3>
         <p className="des-for-tit lg:text-xl">
           {t("subtitle.part1")}
           <br />
           {t("subtitle.part2")}
         </p>
-      </div>
+        {/* </div> */}
+      </motion.div>
 
       <div className="bg-background">
         <div className="content-wrapper grid grid-cols-1 gap-5 pt-10 pb-20 px-5 lg:grid-cols-4 lg:min-h-150 lg:gap-0 lg:py-20 lg:px-0">
