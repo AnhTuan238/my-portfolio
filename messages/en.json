@@ -1,0 +1,36 @@
+{
+  "Navbar": {
+    "About": "About",
+    "Experience": "Exprerience",
+    "Project": "Project"
+  },
+  "Hero": {
+    "title": "I'M TUAN",
+    "subtitle": "Welcome to my <highlight>Portfolio</highlight>"
+  },
+  "About": {
+    "title": "About me",
+    "subtitle": "More than just a web developer,<linebreak> </linebreak> i build meaningful digital experiences that connect ideas and people.",
+    "fullName": "HO ANH TUAN",
+    "descriptionForName": "I was born in <highlight>2003</highlight> and graduated in <highlight>Computer Engineering</highlight> from <highlight>Ho Chi Minh City University of Technology and Education (HCMUTE)</highlight>. I have a great passion for web development and continuously learn new technologies to build high-quality and useful digital products.",
+    "skill": "MY SKILLS",
+    "descriptionForSkill": "I am experienced in modern web development using <highlight>ReactJS</highlight>, <highlight>NextJS</highlight>, and <highlight>NodeJS</highlight>, and have a strong interest in <highlight>SEO optimization</highlight>. I also have solid English communication skills, demonstrated by a <highlight>TOEIC</highlight> score of <highlight>760/990</highlight>."
+  },
+  "Experience": {
+    "title": "Experience",
+    "subtitle": {
+      "part1": "Shaped by hands-on experiences,",
+      "part2": "I transform ideas into real-world solutions through continuous learning and collaboration."
+    }
+  },
+  "Project": {
+    "title": "Project",
+    "subtitle": {
+      "part1": "Each project is a step in my journey, ",
+      "part2": "helping me learn and create meaningful web experiences"
+    }
+  },
+  "Footer": {
+    "author": "Made & designed by <highlight>ANH TUAN</highlight>"
+  }
+}

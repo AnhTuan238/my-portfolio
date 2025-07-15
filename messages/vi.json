@@ -1,0 +1,37 @@
+{
+  "Navbar": {
+    "About": "Về tôi",
+    "Experience": "Kinh nghiệm",
+    "Project": "Dự án"
+  },
+  "Hero": {
+    "title": "I'M TUAN",
+    "subtitle": "Rất vui được gặp bạn tại <highlight>Portfolio</highlight> của tôi"
+  },
+  "About": {
+    "title": "Về tôi",
+    "subtitle": "Hơn cả một người lập trình web, <linebreak></linebreak> tôi tạo ra những trải nghiệm kỹ thuật số có ý nghĩa, kết nối con người và ý tưởng. ",
+    "fullName": "HỒ ANH TUẤN",
+    "descriptionForName": "Tôi sinh năm <highlight>2003</highlight> và đã tốt nghiệp ngành <highlight>Kỹ thuật Máy tính</highlight> của  <highlight>Trường Đại học Sư phạm Kỹ thuật Thành phố Hồ Chí Minh (HCMUTE)</highlight>. Tôi đam mê phát triển web và luôn không ngừng học hỏi những công nghệ mới để tạo ra các sản phẩm chất lượng, hữu ích.",
+    "skill": "KỸ NĂNG",
+    "descriptionForSkill": "Tôi có kinh nghiệm phát triển web hiện đại với các công nghệ <highlight>ReactJS</highlight>, <highlight>NextJS</highlight> và <highlight>NodeJS</highlight>, đồng thời có niềm đam mê với việc <highlight>tối ưu hóa SEO</highlight>. Tôi cũng sở hữu kỹ năng giao tiếp tiếng Anh ổn với điểm <highlight>TOEIC 760/990</highlight>."
+  },
+
+  "Experience": {
+    "title": "Kinh nghiệm",
+    "subtitle": {
+      "part1": "Từ những trải nghiệm thực tế,",
+      "part2": "tôi biến ý tưởng thành giải pháp thông qua học hỏi liên tục và làm việc nhóm"
+    }
+  },
+  "Project": {
+    "title": "Dự án",
+    "subtitle": {
+      "part1": "Mỗi dự án là một bước tiến trong hành trình của tôi,",
+      "part2": "giúp tôi học hỏi và tạo ra những trải nghiệm web ý nghĩa."
+    }
+  },
+  "Footer": {
+    "author": "Thiết kế và xây dựng bởi <highlight>ANH TUẤN</highlight>"
+  }
+}
