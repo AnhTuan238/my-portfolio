@@ -49,27 +49,24 @@ function About() {
             <AnimatedWrapper
               direction="right"
               delay={0.1}
-              className="order-1 lg:order-2"
+              className="animation-image order-1 lg:order-2"
             >
-              <Image
-                src="/images/about-3.gif"
-                alt="ho-anh-tuan"
-                width={640}
-                height={470}
-              />
+              <div className="relative w-[640px] h-[430px] overflow-hidden">
+                <Image src="/images/about-3.gif" alt="ho-anh-tuan" fill />
+              </div>
             </AnimatedWrapper>
           </div>
 
           {/* Bottom */}
           <div className="overflow-hidden relative grid grid-cols-1 items-center py-15 lg:py-30 lg:grid-cols-2">
-            <AnimatedWrapper direction="left" delay={0.1}>
-              <Image
-                src="/images/my-skill.png"
-                alt="my-skills"
-                width={640}
-                height={470}
-                className="justify-self-end"
-              />
+            <AnimatedWrapper
+              direction="left"
+              delay={0.1}
+              className="animation-image justify-self-end"
+            >
+              <div className="relative w-[640px] h-[430px] overflow-hidden">
+                <Image src="/images/my-skill.png" alt="my-skills" fill />
+              </div>
             </AnimatedWrapper>
             <AnimatedWrapper
               direction="right"

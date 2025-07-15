@@ -168,8 +168,51 @@
     background-color: #1e1e1e;
     transition: all 0.2s ease-in-out;
   }
+  .animation-image {
+    position: relative;
+    overflow: hidden;
+  }
+  .animation-image img {
+    transition: transform 0.3s ease-in-out;
+  }
+  .animation-image::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      to(rgba(255, 255, 255, 0.3))
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+  }
+  .animation-image:hover::before {
+    animation: shine 0.75s;
+  }
+  .animation-image:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  @keyframes shine {
+    100% {
+      left: 125%;
+    }
+  }
 
-  /* #hero .img {
+  #hero .img {
     position: absolute;
     top: 0;
     width: 100%;
@@ -204,5 +247,5 @@
       opacity: 0;
       transform: scale(0.9);
     }
-  } */
+  }
 }
