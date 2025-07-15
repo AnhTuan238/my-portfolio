@@ -48,9 +48,7 @@ function Navbar() {
         href="/"
         className="absolute top-10 left-5 z-4 lg:top-5.5 lg:left-7.5"
       >
-        <h1 className="text-2xl text-white font-bold lg:text-black">
-          ANHTUANN
-        </h1>
+        <h1 className="text-2xl text-white font-bold lg:text-black">ANHTUAN</h1>
       </Link>
 
       {/* Navigation */}
