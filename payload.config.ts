@@ -15,11 +15,6 @@ export default buildConfig({
   collections: [Project, Media, Technology],
   globals: [Portfolio],
   serverURL: process.env.PAYLOAD_URL || "http://localhost:3000",
-  cors: [
-    "http://localhost:3000", // Cho phép khi phát triển cục bộ
-    "https://my-portfolio-rho-green-25.vercel.app", // THAY THẾ BẰNG URL VERCEL THỰC TẾ CỦA BẠN
-    // ... các domain khác nếu có
-  ],
 
   // Your Payload secret - should be a complex and secure string, unguessable
   secret: process.env.PAYLOAD_SECRET || "",
