@@ -19,7 +19,6 @@ function ProjectCard({ project }: ProjectCardProps) {
         height={120}
         alt="project"
         className="mb-4 h-[120px]!"
-        unoptimized
       />
       <div className="flex-1 px-4">
         {/* Title */}
