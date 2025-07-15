@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 import { withPayload } from "@payloadcms/next/withPayload";
 import createNextIntlPlugin from "next-intl/plugin";
-require("dotenv").config(); // Load .env
+require("dotenv").config();
 
 const payloadUrl =
   process.env.PAYLOAD_URL || "https://my-portfolio-rho-green-25.vercel.app";
@@ -10,8 +10,11 @@ const nextConfig: NextConfig = {
   experimental: {
     reactCompiler: false,
   },
+  // images: {
+  //   domains: [new URL(payloadUrl).hostname],
+  // },
   images: {
-    domains: [new URL(payloadUrl).hostname],
+    domains: ["localhost", "my-portfolio-rho-green-25.vercel.app"],
   },
 };
 
