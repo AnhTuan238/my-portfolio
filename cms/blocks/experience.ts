@@ -2,7 +2,6 @@ import { Block } from "payload";
 
 export const Experience: Block = {
   slug: "experience",
-
   fields: [
     {
       name: "company",

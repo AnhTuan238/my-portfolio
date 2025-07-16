@@ -17,11 +17,7 @@ export default function SkillList({
     <div className="flex gap-4 overflow-scroll scrollbar-hide lg:overflow-hidden lg:flex-col">
       <button
         onClick={() => onSelect(null)}
-        className={
-          selectedSkillId === null
-            ? "filter-item bg-primary text-white"
-            : "filter-item"
-        }
+        className={`${selectedSkillId === null ? "text-white bg-primary border-none" : "text-text-gray-2"} py-2 px-4 w-fit text-base font-bold rounded-[50px] border border-border whitespace-nowrap cursor-pointer`}
       >
         All
       </button>
@@ -29,11 +25,11 @@ export default function SkillList({
         <button
           key={skill.id}
           onClick={() => onSelect(skill.id)}
-          className={
+          className={`${
             selectedSkillId === skill.id
-              ? "filter-item bg-primary text-white"
-              : "filter-item"
-          }
+              ? "text-white bg-primary border-none"
+              : "text-text-gray-2"
+          } py-2 px-4 w-fit text-base font-bold rounded-[50px] border border-border whitespace-nowrap cursor-pointer`}
         >
           {skill.name}
         </button>

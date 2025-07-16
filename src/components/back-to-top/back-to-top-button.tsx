@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
+import { useEffect, useState } from "react";
 
 function BackToTopButton() {
   const [visible, setVisible] = useState(false);

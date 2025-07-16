@@ -10,7 +10,7 @@ function ProjectCard({ project }: ProjectCardProps) {
   return (
     <div
       key={project.id}
-      className="flex flex-col min-h-87 bg-white rounded shadow-custom "
+      className="flex flex-col min-h-87 max-w-[270px] bg-white rounded shadow-custom"
     >
       {/* Image */}
       <Image
@@ -22,7 +22,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       />
       <div className="flex-1 px-4">
         {/* Title */}
-        <h4 className="heading mb-2 text-xl text-left line-clamp-2 lg:text-2xl">
+        <h4 className="title mb-2 text-xl text-left line-clamp-2 lg:text-2xl">
           {project.projectName}
         </h4>
 
@@ -36,7 +36,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         </ul>
 
         {/* Description */}
-        <p className="des-for-tit text-sm text-left line-clamp-3">
+        <p className="subtitle text-sm text-left line-clamp-3">
           {project.description}
         </p>
       </div>

@@ -3,10 +3,10 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
-import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 import ProjectList from "@/modules/portfolio/components/project/ProjectList";
 import SkillList from "@/modules/portfolio/components/project/SkillList";
+import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
+import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 
 interface Props {
   projectsData: ProjectType[];
@@ -25,15 +25,15 @@ export default function Project({ projectsData, skillsData }: Props) {
   const t = useTranslations("Project");
 
   return (
-    <section id="projects" className="section px-0 pb-0 lg:p-0 lg:pt-45">
+    <section id="projects" className=" pt-17 lg:pt-45">
       {/* Title */}
       <AnimatedWrapper
         direction="up"
         delay={0.1}
         className="px-5 mb-9 lg:mb-18"
       >
-        <h3 className="heading lg:mb-6 lg:text-6xl">{t("title")}</h3>
-        <p className="des-for-tit lg:text-xl">
+        <h3 className="title lg:mb-6 lg:text-6xl">{t("title")}</h3>
+        <p className="subtitle lg:text-xl">
           {t("subtitle.part1")}
           <br />
           {t("subtitle.part2")}
@@ -41,7 +41,7 @@ export default function Project({ projectsData, skillsData }: Props) {
       </AnimatedWrapper>
 
       <div className="bg-background">
-        <div className="content-wrapper grid grid-cols-1 gap-5 pt-10 pb-20 px-5 lg:grid-cols-4 lg:min-h-150 lg:gap-0 lg:py-20 lg:px-0">
+        <div className="max-w-7xl m-auto grid grid-cols-1 gap-5 px-5 pt-10 pb-20 lg:grid-cols-4 lg:min-h-150 lg:gap-0 lg:py-20 lg:px-7.5">
           <div className="lg:col-span-1">
             <SkillList
               skills={skillsData}
