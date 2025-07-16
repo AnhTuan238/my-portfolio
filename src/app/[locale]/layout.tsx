@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 import Header from "@/components/header/Header";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/footer-temp/Footer";
 import { ScrollProvider } from "@/context/scroll-context";
 import BackToTopButton from "@/components/back-to-top/back-to-top-button";
 

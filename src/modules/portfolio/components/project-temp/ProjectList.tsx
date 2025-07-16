@@ -1,6 +1,6 @@
 import { ProjectType } from "@/modules/portfolio/types";
 import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
-import ProjectCard from "@/modules/portfolio/components/project/ProjectCard";
+import ProjectCard from "@/modules/portfolio/components/project-temp/ProjectCard";
 
 interface Props {
   projects: ProjectType[];
