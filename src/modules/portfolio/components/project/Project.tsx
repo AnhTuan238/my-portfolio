@@ -5,8 +5,8 @@ import { useState } from "react";
 
 import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
 import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
-import ProjectList from "@/modules/portfolio/components/project-temp/ProjectList";
-import SkillList from "@/modules/portfolio/components/project-temp/SkillList";
+import ProjectList from "@/modules/portfolio/components/project/ProjectList";
+import SkillList from "@/modules/portfolio/components/project/SkillList";
 
 interface Props {
   projectsData: ProjectType[];
