@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
-import AnimatedWrapper from "@/components/animation-temp/AnimatedWrapper";
+import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 import ProjectList from "@/modules/portfolio/components/project/ProjectList";
 import SkillList from "@/modules/portfolio/components/project/SkillList";
 
