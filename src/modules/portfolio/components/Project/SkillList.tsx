@@ -1,9 +1,9 @@
 "use client";
 
-import { TechType } from "@/modules/portfolio/types/project.type";
+import { TechnologyType } from "@/modules/portfolio/types";
 
 interface Props {
-  skills: TechType[];
+  skills: TechnologyType[];
   selectedSkillId: string | null;
   onSelect: (id: string | null) => void;
 }

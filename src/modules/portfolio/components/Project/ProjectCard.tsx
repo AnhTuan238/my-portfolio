@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { ProjectType } from "@/modules/portfolio/types/project.type";
+import { ProjectType } from "@/modules/portfolio/types";
 
 type ProjectCardProps = {
   project: ProjectType;

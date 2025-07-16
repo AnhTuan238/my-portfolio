@@ -1,11 +1,13 @@
-// src/modules/portfolio/services/portfolio.service.ts
-
-import { ProjectType, ExperienceType, TechType } from "@/lib/interface";
+import {
+  ProjectType,
+  ExperienceType,
+  TechnologyType,
+} from "@/modules/portfolio/types";
 
 interface PortfolioDataType {
   experiences: ExperienceType[];
   projects: ProjectType[];
-  skills: TechType[];
+  skills: TechnologyType[];
 }
 
 interface FetchConfig {
@@ -46,7 +48,7 @@ export async function fetchPortfolioData(): Promise<PortfolioDataType> {
       extractField: "docs",
       errorMessage: "Failed to fetch projects",
     }),
-    fetchPayloadData<TechType[]>({
+    fetchPayloadData<TechnologyType[]>({
       path: "technologies",
       depth: 1,
       extractField: "docs",

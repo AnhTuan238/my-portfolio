@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { useEffect } from "react";
 import Image from "next/image";
 
-import { useScroll } from "@/context/ScrollContext";
+import { useScroll } from "@/context/scroll-context";
 
 export default function Hero() {
   const { shrink, setShrink } = useScroll();

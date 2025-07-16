@@ -4,10 +4,10 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
-import { ScrollProvider } from "@/context/ScrollContext";
-import BackToTopButton from "@/components/BackToTop/BackToTopButton";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import { ScrollProvider } from "@/context/scroll-context";
+import BackToTopButton from "@/components/back-to-top/back-to-top-button";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -37,7 +37,7 @@ export default async function RootLayout({
       <body className={`${outfit.variable} antialiased`}>
         <NextIntlClientProvider>
           <ScrollProvider>
-            <Navbar />
+            <Header />
             {children}
             <Footer />
             <BackToTopButton />

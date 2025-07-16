@@ -1,8 +1,4 @@
-export interface TechType {
-  name: string;
-  icon: string;
-  id: string;
-}
+import { TechnologyType } from "@/modules/portfolio/types";
 
 export interface ProjectType {
   id: string;
@@ -13,9 +9,9 @@ export interface ProjectType {
     alt?: string;
     filename: string;
   };
-  technologies: TechType[];
+  technologies: TechnologyType[];
   githubLink: string;
   demoLink: string;
   filename: string;
-  techs: TechType[];
+  techs: TechnologyType[];
 }

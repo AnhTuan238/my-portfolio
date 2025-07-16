@@ -1,5 +1,5 @@
 import { GlobalConfig } from "payload";
-import { Experience } from "../Block/Experience";
+import { Experience } from "../blocks";
 
 export const Portfolio: GlobalConfig = {
   slug: "portfolio",

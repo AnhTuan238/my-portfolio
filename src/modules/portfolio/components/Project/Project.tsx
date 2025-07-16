@@ -3,15 +3,14 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-import { ProjectType, TechType } from "@/modules/portfolio/types/project.type";
-import AnimatedWrapper from "@/components/Animation/AnimatedWrapper";
-import ProjectList from "./ProjectList";
-import SkillList from "./SkillList";
+import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
+import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
+import ProjectList from "@/modules/portfolio/components/project/ProjectList";
+import SkillList from "@/modules/portfolio/components/project/SkillList";
 
 interface Props {
-  //   t: (key: string) => string;
   projectsData: ProjectType[];
-  skillsData: TechType[];
+  skillsData: TechnologyType[];
 }
 
 export default function Project({ projectsData, skillsData }: Props) {

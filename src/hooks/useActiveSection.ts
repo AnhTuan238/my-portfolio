@@ -1,9 +1,9 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { NavbarItemType } from "@/lib/interface";
+import { HeaderItemType } from "@/lib/interface";
 
-export function useActiveSection(links: NavbarItemType[]) {
+export function useActiveSection(links: HeaderItemType[]) {
   const [activeSectionId, setActiveSectionId] = useState<string>(
     links[0]?.id || ""
   );

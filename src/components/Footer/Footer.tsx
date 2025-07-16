@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 
-import IconList from "@/components/Icon/IconList";
+import IconList from "@/components/footer/icon-list";
 
 function Footer() {
   const t = useTranslations("Footer");

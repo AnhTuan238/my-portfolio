@@ -5,19 +5,19 @@ import Link from "next/link";
 
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { useActiveSection } from "@/hooks/useActiveSection";
-import { useScroll } from "@/context/ScrollContext";
-import { NavbarItemType } from "@/lib/interface";
+import { useScroll } from "@/context/scroll-context";
+import { HeaderItemType } from "@/lib/interface";
 import LocaleSwitcher from "./local-switcher";
 
 interface MenuProps {
-  links: NavbarItemType[];
+  links: HeaderItemType[];
 }
 
-function Navbar() {
+function Header() {
   const scrollToSection = useScrollToSection();
   const { shrink, setShrink } = useScroll();
-  const t = useTranslations("Navbar");
-  const navLinks: NavbarItemType[] = [
+  const t = useTranslations("Header");
+  const navLinks: HeaderItemType[] = [
     {
       id: "about",
       title: t("About"),
@@ -81,4 +81,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Header;
