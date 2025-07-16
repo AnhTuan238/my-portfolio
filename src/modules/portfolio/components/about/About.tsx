@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
+import AnimatedWrapper from "@/components/animation-temp/AnimatedWrapper";
 
 function About() {
   const t = useTranslations("About");

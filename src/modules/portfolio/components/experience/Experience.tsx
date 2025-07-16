@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 
 import { ExperienceType } from "@/modules/portfolio/types";
-import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
+import AnimatedWrapper from "@/components/animation-temp/AnimatedWrapper";
 
 export default async function Experience({
   experiencesData,
