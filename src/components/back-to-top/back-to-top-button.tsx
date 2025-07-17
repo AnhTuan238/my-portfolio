@@ -8,7 +8,11 @@ function BackToTopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      window.scrollY > 300 ? setVisible(true) : setVisible(false);
+      const isVisible = window.scrollY > 300;
+      setVisible((prev: boolean) => {
+        if (prev !== isVisible) return isVisible;
+        return prev;
+      });
     };
     window.addEventListener("scroll", toggleVisibility);
 
