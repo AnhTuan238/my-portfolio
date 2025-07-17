@@ -1,6 +1,6 @@
-import { ProjectType } from "@/modules/portfolio/types";
-import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 import ProjectCard from "@/modules/portfolio/components/project/ProjectCard";
+import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
+import { ProjectType } from "@/modules/portfolio/types";
 
 export default function ProjectList({ projects }: { projects: ProjectType[] }) {
   return (

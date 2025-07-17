@@ -14,7 +14,7 @@ function ProjectCard({ project }: { project: ProjectType }) {
         width={270}
         height={120}
         alt="project"
-        className="mb-4 h-[120px]!"
+        className="mb-4 h-30!"
       />
       <div className="flex-1 px-4">
         {/* Title */}

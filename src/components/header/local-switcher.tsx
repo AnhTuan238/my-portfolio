@@ -25,6 +25,7 @@ export default function LocaleSwitcher() {
     <div className="z-4 absolute top-9.5 right-5 flex items-center gap-1 text-white lg:top-5 lg:text-black">
       <RiGlobalLine size={25} />
       <select
+        aria-label="Select language"
         value={locale}
         onChange={handleChangeLanguage}
         disabled={isPending}
