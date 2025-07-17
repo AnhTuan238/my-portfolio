@@ -27,16 +27,14 @@ function BackToTopButton() {
   };
 
   return (
-    <>
-      {visible && (
-        <button
-          className="z-99 fixed bottom-20 right-5 p-3 font-bold bg-white rounded-full border border-2 border-black cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:border-transparent lg:bottom-10 lg:right-10"
-          onClick={scrollToTop}
-        >
-          <MdOutlineKeyboardDoubleArrowUp size={30} />
-        </button>
-      )}
-    </>
+    visible && (
+      <button
+        className="z-10 fixed bottom-20 right-5 p-3 font-bold bg-white rounded-full border border-2 border-black cursor-pointer transition-all duration-300 hover:bg-primary hover:text-white hover:border-transparent lg:bottom-10 lg:right-10"
+        onClick={scrollToTop}
+      >
+        <MdOutlineKeyboardDoubleArrowUp size={30} />
+      </button>
+    )
   );
 }
 
