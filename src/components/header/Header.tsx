@@ -6,18 +6,13 @@ import Link from "next/link";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { useScroll } from "@/context/scroll-context";
-import { HeaderItemType } from "@/lib/interface";
 import LocaleSwitcher from "./local-switcher";
-
-interface MenuProps {
-  links: HeaderItemType[];
-}
 
 function Header() {
   const scrollToSection = useScrollToSection();
   const { shrink, setShrink } = useScroll();
   const t = useTranslations("Header");
-  const navLinks: HeaderItemType[] = [
+  const navLinks = [
     {
       id: "about",
       title: t("About"),

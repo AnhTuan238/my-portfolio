@@ -2,11 +2,7 @@ import { ProjectType } from "@/modules/portfolio/types";
 import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 import ProjectCard from "@/modules/portfolio/components/project/ProjectCard";
 
-interface Props {
-  projects: ProjectType[];
-}
-
-export default function ProjectList({ projects }: Props) {
+export default function ProjectList({ projects }: { projects: ProjectType[] }) {
   return (
     <AnimatedWrapper
       direction="up"

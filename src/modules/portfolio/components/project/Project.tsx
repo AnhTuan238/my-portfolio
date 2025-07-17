@@ -8,12 +8,12 @@ import SkillList from "@/modules/portfolio/components/project/SkillList";
 import { ProjectType, TechnologyType } from "@/modules/portfolio/types";
 import AnimatedWrapper from "@/components/animation/AnimatedWrapper";
 
-interface Props {
+interface ProjectItemType {
   projectsData: ProjectType[];
   skillsData: TechnologyType[];
 }
 
-export default function Project({ projectsData, skillsData }: Props) {
+export default function Project({ projectsData, skillsData }: ProjectItemType) {
   const [selectedSkillId, setSelectedSkillId] = useState<string | null>(null);
 
   const filteredProjects = selectedSkillId

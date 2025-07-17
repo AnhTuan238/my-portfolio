@@ -10,6 +10,7 @@ function Footer() {
       className="flex items-center justify-center bg-white"
     >
       <div className="flex flex-col-reverse items-center justify-between gap-4 py-10 w-full max-w-7xl lg:px-7.5 lg:flex-row">
+        {/* Author */}
         <p className="text-black text-sm">
           © {new Date().getFullYear()}.{" "}
           {t.rich("author", {
@@ -18,6 +19,8 @@ function Footer() {
             ),
           })}
         </p>
+
+        {/* Contact */}
         <ul className="flex gap-10">
           <IconList />
         </ul>

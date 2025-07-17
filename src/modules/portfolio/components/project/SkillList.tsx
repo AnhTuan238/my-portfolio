@@ -2,7 +2,7 @@
 
 import { TechnologyType } from "@/modules/portfolio/types";
 
-interface Props {
+interface SkillListType {
   skills: TechnologyType[];
   selectedSkillId: string | null;
   onSelect: (id: string | null) => void;
@@ -12,7 +12,7 @@ export default function SkillList({
   skills,
   selectedSkillId,
   onSelect,
-}: Props) {
+}: SkillListType) {
   return (
     <div className="flex gap-4 overflow-scroll scrollbar-hide lg:overflow-hidden lg:flex-col">
       <button

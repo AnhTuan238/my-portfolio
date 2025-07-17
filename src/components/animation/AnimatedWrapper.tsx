@@ -3,17 +3,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 
+import { AnimatedWrapperType } from "@/lib/interface";
+
 export default function AnimatedWrapper({
   children,
   direction = "up",
   delay = 0,
   className,
-}: {
-  children: React.ReactNode;
-  direction?: "left" | "right" | "up";
-  delay?: number;
-  className?: string;
-}) {
+}: AnimatedWrapperType) {
   const getInitial = () => {
     switch (direction) {
       case "left":

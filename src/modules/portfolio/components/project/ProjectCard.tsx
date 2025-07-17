@@ -2,11 +2,7 @@ import Image from "next/image";
 
 import { ProjectType } from "@/modules/portfolio/types";
 
-type ProjectCardProps = {
-  project: ProjectType;
-};
-
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project }: { project: ProjectType }) {
   return (
     <div
       key={project.id}
