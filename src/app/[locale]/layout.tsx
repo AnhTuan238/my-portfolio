@@ -35,6 +35,12 @@ export default async function RootLayout({
   }
   return (
     <html lang={locale}>
+      <head>
+        <meta
+          name="description"
+          content="This is Anh Tuan's portfolio showcasing projects, skills, and contact information."
+        />
+      </head>
       <body className={`${outfit.variable} antialiased`}>
         <NextIntlClientProvider>
           <ScrollProvider>
