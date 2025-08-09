@@ -15,7 +15,7 @@ export const siteMetadata = {
   availableLanguages: ["en", "vi"],
   author: "Anh Tuan",
   siteLogo: "",
-  socialBanner: "/images/anh-tuan-dev.png",
+  socialBanner: "/images/tuan-dev.png",
   email: "hoanhtuan23082003@gmail.com",
   github: "https://github.com/AnhTuan238",
   facebook: "https://www.facebook.com/anh.tuan.532095",

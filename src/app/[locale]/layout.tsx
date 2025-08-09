@@ -47,7 +47,7 @@ export async function generateMetadata({
       siteName: siteMetadata.title,
       images: [
         {
-          url: siteMetadata.socialBanner || "/images/anh-tuan-dev.png",
+          url: siteMetadata.socialBanner || "/images/tuan-dev.png",
           alt: siteMetadata.title,
         },
       ],
